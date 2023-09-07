@@ -1,0 +1,31 @@
+body{
+background-color:black;  
+}
+svg{
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  margin:auto;
+}
+.a1{
+  stroke:red;
+  stroke-width:2px;
+  stroke-dashoffset:-1000;
+  stroke-dasharray:1000;
+  animation:krishna 10s infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in;
+}
+
+@keyframes krishna{
+  0%{
+    stroke-dashoffset:1800;
+    stroke:blue;
+  }
+  100%{
+    stroke-dashoffset:0;
+    stroke:red;
+  }
+}
